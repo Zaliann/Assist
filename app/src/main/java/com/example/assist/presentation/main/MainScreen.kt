@@ -47,7 +47,9 @@ class MainScreen : Screen {
                                     icon = {
                                         Icon(
                                             painter = options.icon!!,
-                                            contentDescription = options.title
+                                            contentDescription = options.title,
+                                            tint = if (tabNavigator.current.key == tab.key) Color(0xFF4CAF50) else Color.White
+
                                         )
                                     }
                                 )
