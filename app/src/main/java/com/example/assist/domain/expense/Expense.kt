@@ -12,9 +12,6 @@ class Expense(
 )
 
 sealed interface ExpenseTarget {
-    //new
-//    @JvmInline
-//    value class CarPart(val part: String) : ExpenseTarget
 
     @JvmInline
     value class CarPart(val part: Part) : ExpenseTarget

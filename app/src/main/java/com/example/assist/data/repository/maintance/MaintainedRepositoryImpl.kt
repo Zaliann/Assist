@@ -1,23 +1,18 @@
 package com.example.assist.data.repository.maintance
 
 import android.util.Log
-import com.example.assist.data.database.entity.MaintainanceEntity
 import com.example.assist.data.database.dao.MaintainceDao
 import com.example.assist.data.database.dao.resolve
+import com.example.assist.data.database.entity.MaintainanceEntity
 import com.example.assist.data.database.entity.toDomain
 import com.example.assist.domain.car.Car
-import com.example.assist.domain.car.SelectedCar
 import com.example.assist.domain.maintaince.MaintainceRepository
 import com.example.assist.domain.maintaince.Part
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
-import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.filterNotNull
-import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.onEach
-import javax.inject.Inject
 
 class MaintainedRepositoryImpl @AssistedInject constructor(
     @Assisted private val car: Car,

@@ -1,7 +1,7 @@
 package com.example.assist.presentation.analytics
 
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Immutable
 import androidx.compose.runtime.NonRestartableComposable
@@ -17,7 +17,7 @@ class AnalyticsScreen : StateComponent<AnalyticsScreen.Action, AnalyticsScreen.S
     override val options: TabOptions
         @Composable
         get() = run {
-            val painter = rememberVectorPainter(Icons.Filled.Menu)
+            val painter = rememberVectorPainter(Icons.Filled.Search)
             remember {
                 TabOptions(index = 4u, "Analytics", painter)
             }

@@ -29,18 +29,6 @@ class CarsListModel @Inject constructor(
     StateHolder<CarsListScreen.State> by StateHolder(CarsListScreen.State()) {
 
     init {
-        // TODO remove
-        screenModelScope.launch {
-            val fakeCar = Car(
-                id = 0,
-                brand = "Toyota",
-                model = "Corolla",
-                year = 2003,
-                mileage = 17003
-            )
-            repository.put(fakeCar)
-        }
-
         observeCars()
         observeSelected()
     }

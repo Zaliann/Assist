@@ -32,7 +32,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.focus.focusModifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -192,7 +191,7 @@ fun AnalyticsScreenContent(
 
         TextButton(modifier = Modifier.align(Alignment.CenterHorizontally), onClick = { onAction(AnalyticsScreen.Action.Compute) }) {
             Text(
-                text = "Найти сумму расходов",
+                text = "Вычислить",
                 fontSize = 24.sp,
                 style = MaterialTheme.typography.bodyLarge.copy(
                     fontWeight = FontWeight.Bold

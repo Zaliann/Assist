@@ -2,7 +2,6 @@ package com.example.assist.data.repository.car
 
 import android.util.Log
 import com.example.assist.data.database.dao.CarDao
-import com.example.assist.data.database.entity.toDomain
 import com.example.assist.data.database.toDomain
 import com.example.assist.data.store.Store
 import com.example.assist.domain.car.Car

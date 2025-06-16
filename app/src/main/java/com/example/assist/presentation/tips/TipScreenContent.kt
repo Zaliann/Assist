@@ -99,15 +99,11 @@ fun TipItem(
                 Text(
                     text = headerText,
                     color = Color(0xFF4CAF50),
-                    fontWeight = FontWeight.Bold,
-                    //maxLines = 1,
-                    //overflow = TextOverflow.Ellipsis
+                    fontWeight = FontWeight.Bold
                 )
 
                 Text(
                     text = mainText,
-                    //maxLines = 1,
-                    //overflow = TextOverflow.Ellipsis,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
 

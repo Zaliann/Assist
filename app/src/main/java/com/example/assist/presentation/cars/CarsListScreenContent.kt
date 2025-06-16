@@ -195,8 +195,8 @@ private val border = BorderStroke(1.dp, Color.LightGray)
                  verticalArrangement = Arrangement.spacedBy(4.dp),
                  modifier = Modifier.padding(8.dp)
              ) {
-                 Text(text = car.model)
                  Text(text = car.brand)
+                 Text(text = car.model)
                  Text(text = car.year.toString())
              }
          }
